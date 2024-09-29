@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="puncture.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-banner">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <div id="textCarousel" class="carousel slide text-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>Genuine Crown Motorcycle Parts available in Pakistan.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Your order will arrive within 3-5 business days.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Free delivery nationwide on orders over PKR 2,500/-.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="icons order-1">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <div class="icons order-1">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span> <!-- This will update dynamically -->
+                        </a>
+                    </div>
+                </div>
+
+                <div class="logo mx-auto order-2">
+                    <img src="pics/company_logo-removebg-preview.png" alt="Ali Lube Oil" class="d-block">
+                </div>
+                <div class="spacer order-3">
+                    <!-- This empty div ensures spacing on the right -->
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Allcategory.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">All products</a>
+                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Air Filters & Intakes</a>
+                        <a class="dropdown-item" href="#">Bearings</a>
+                        <a class="dropdown-item" href="#">Body Parts</a>
+                        <a class="dropdown-item" href="#">Brakes</a>
+                        <a class="dropdown-item" href="#">Battery</a>
+                        <a class="dropdown-item" href="#">Carburetors</a>
+                        <a class="dropdown-item" href="#">Control Cables</a>
+                        <a class="dropdown-item" href="#">Engine Parts</a>
+                        <a class="dropdown-item" href="#">Electrical Parts</a>
+                        <a class="dropdown-item" href="#">Jumps & Shocks</a>
+                        <a class="dropdown-item" href="#">Lubricants</a>
+                        <a class="dropdown-item" href="#">Meters</a>
+                        <a class="dropdown-item" href="#">Wheels & Accessories</a>
+                        <a class="dropdown-item" href="#">Wiring</a>
+
+                        <!-- Add more categories as needed -->
+                    </div>
+                </li>
+                <li><a href="puncture.html">Puncture Free Solution Cars</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="underRs.500.html">Under Rs. 500</a></li>
+                <li><a href="underRs.1000.html">Under Rs. 1,000</a></li>
+                <li><a href="underRs.2000.html">Under Rs. 2,000</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- backgroundcover2 -->
+
+    <div class="background-cover"></div>
+
+    <div class="promo-section">
+        <h2>No More Punctures!</h2>
+        <p>Go worry free about punctures on the go with Crown Puncture Free Solution now for Cars. The Solution gives
+            you confidence to drive on roads for months without any hassle.</p>
+        <button class="buy-now-button">Buy Now for Just PKR 799 Only!</button>
+    </div>
+
+    <div class="steps-section">
+        <h2>4 Easy Steps! <span class="emoji">😍</span></h2>
+
+        <div class="steps-container">
+            <div class="step">
+                <img src="pics/pic1.avif" alt="Open Air Valve">
+                <h3>Open Air Valve</h3>
+                <p>Open your tire's air valve to release air from the tire. Make sure to perform this act slowly to
+                    avoid damaging valve pin.</p>
+            </div>
+
+            <div class="step">
+                <img src="pics/pic2.avif" alt="Insert Solution">
+                <h3>Insert Solution</h3>
+                <p>Carefully insert the solution into the tire with the bottle in upright position. Use the tube and
+                    place it well into the nozzle.</p>
+            </div>
+
+            <div class="step">
+                <img src="pics/pic3.avif" alt="Reinstall Air Valve">
+                <h3>Reinstall Air Valve</h3>
+                <p>Reinstall the air valve once the solution is completely inserted. Before inserting air, your air
+                    valve should be properly fit to avoid leaks.</p>
+            </div>
+
+            <div class="step">
+                <img src="pics/pic4.avif" alt="Insert Air">
+                <h3>Insert Air</h3>
+                <p>Inflate your tire(s) to 30 PSI as recommended by the company. In case your tire size is different
+                    (bigger), inflate at recommended value.</p>
+            </div>
+        </div>
+
+        <button class="cta-button">Secure Your Tires Now!</button>
+    </div>
+
+    <div class="car-brands-section">
+        <h2>Suitable on Multiple Car Tires <span class="emoji">💪</span></h2>
+
+        <div class="brands-container">
+            <div class="brand">
+                <img src="pics/suzuki logo.png" alt="Suzuki">
+                <h3>Suzuki</h3>
+                <p>Tested on Mehran, Alto, Cultus, Swift, Bolan and Liana.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/Toyota logo.jpeg" alt="Toyota">
+                <h3>Toyota</h3>
+                <p>Tested on Corolla, Prius, Aqua, Passo, Yaris, Pixi, Cross, Land Cruiser & Prado.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/Honda logo with no background.png" alt="Honda">
+                <h3>Honda</h3>
+                <p>Tested on Civic, City, HR-V, BR-V and Vezel.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/kia ogo.jpeg" alt="KIA">
+                <h3>KIA</h3>
+                <p>Tested on Sportage, Picanto, Stonic, Sorento & Carnival.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/changan logo.png" alt="Changan">
+                <h3>Changan</h3>
+                <p>Tested on Alsvin, Oshan and Karvaan.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/peugeot logo.png" alt="Peugeot">
+                <h3>Peugeot</h3>
+                <p>Tested on Model 2000.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/hyundai logo.jpg" alt="Hyundai">
+                <h3>Hyundai</h3>
+                <p>Tested on Elantra, Sonata and Tucson.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/daihatsu logo.png" alt="Daihatsu">
+                <h3>Daihatsu</h3>
+                <p>Tested on Mira, Cuore and Rocky.</p>
+            </div>
+
+            <div class="brand">
+                <img src="pics/Audi logo.png" alt="Audi">
+                <h3>Audi</h3>
+                <p>Tested on A8, A5, E-Tron and E-Tron GT.</p>
+            </div>
+        </div>
+
+        <button class="buy-now-button">Buy Now and Save PKR 210 on Pack of 4!</button>
+    </div>
+
+    <div class="promo-section">
+        <div class="promo-container">
+            <!-- Left Side Text -->
+            <div class="promo-content">
+                <h3 class="promo-subtitle">Seal Punctures</h3>
+                <h2 class="promo-title">Seal Your Confidence</h2>
+                <p class="promo-description">
+                    With Crown's Solution, conquer the road with confidence. Our advanced sealing technology ensures
+                    that punctures become a thing of the past. Drive worry-free knowing that your tires are protected
+                    against flats, allowing you to focus on the joy of the journey ahead.
+                </p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <!-- Right Side Image -->
+            <div class="promo-image">
+                <img src="path/to/your/image1.jpg" alt="Puncture Free Ad">
+            </div>
+        </div>
+    </div>
+
+    <div class="promo-section"></div>
+    <div class="promo-container">
+        <!-- Left Side Image -->
+        <div class="promo-image">
+            <img src="path/to/your/image3.jpg" alt="Puncture Free Ad">
+        </div>
+
+        <!-- Right Side Text -->
+        <div class="promo-content">
+            <h3 class="promo-subtitle">Supported Car Tires</h3>
+            <h2 class="promo-title">Suzuki, KIA, Toyota, Honda, Changan and much more!</h2>
+            <p class="promo-description">
+                Supported and tested on:
+            </p>
+            <ul class="promo-list">
+                <li>Suzuki Mehran, Cultus, Swift, Wagon-R, Alto, Bolan.</li>
+                <li>Toyota Corolla, Yaris, Pixis, Passo, Axis, Hilux, Fortuner, Prado.</li>
+                <li>Daihatsu Mira, Cuore, Moco.</li>
+                <li>KIA Sportage, Picanto, Stonic, Carnival.</li>
+                <li>Honda Civic, City, Vezel, HRV, BRV.</li>
+                <li>Changan Alsvin, Karvaan.</li>
+                <li>Peugeot Model 2000.</li>
+                <li>Hyundai Porter, Elantra, Sonata, Tuscon.</li>
+            </ul>
+            <button class="buy-now-button">Buy Now</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="promo-section reverse">
+        <div class="promo-container">
+            <!-- Left Side Image -->
+            <div class="promo-image">
+                <img src="path/to/your/image2.jpg" alt="Puncture Free Ad">
+            </div>
+
+            <!-- Right Side Text -->
+            <div class="promo-content">
+                <h3 class="promo-subtitle">Guaranteed Protection</h3>
+                <h2 class="promo-title">Befikri Sey Gari Chalao!</h2>
+                <p class="promo-description">
+                    With Crown's Puncture-Free Solution, safeguard your cars from punctures forever with just one
+                    application. Our innovative formula locks into the tire, sealing punctures completely and ensuring
+                    perpetual protection against flat tires. Say farewell to tire worries and embrace endless journeys
+                    with Crown.
+                </p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap FAQ section -->
+    <!-- FAQ Section Starts -->
+    <div class="container my-5">
+        <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is a puncture-free solution?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        A puncture-free solution is designed to prevent or minimize punctures in tubeless tires and
+                        tires with tubes for cars thereby reducing the occurrence of flat tires.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Which tyres are supported?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Crown Puncture Free Solution can work with all car tires available in market such as General,
+                        Michelin, Dunlop, Toyo, Yokohama, MRF, Continental, Pirelli, Kumho, Firestone, Cooper, and
+                        Goodyear tires. However, we recommend you check the tire pressure and inflate as per recommended
+                        tire air pressure.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How does a puncture-free solution work?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Crown's puncture-free solution creates a sealing sheet inside the tube, effectively preventing
+                        air leakage and sealing the puncture. Once applied to your car, it provides enhanced protection
+                        against punctures after a single application for months!
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What are the benefits of using a puncture-free solution?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The benefits include reduced downtime and maintenance costs associated with flat tires, improved
+                        safety, enhanced reliability, and increased lifespan of tires.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Are puncture-free solutions suitable for all types of vehicles?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Puncture-free solutions can be adapted for various vehicles, including cars. However, the
+                        suitability may vary depending on factors such as vehicle type, usage conditions, and
+                        performance requirements.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Section Ends -->
+
+            <div class="email-subscription">
+                <p class="title">Subscribe to our emails</p>
+                <p class="description">Be the first to know about new collections and exclusive offers.</p>
+                <form id="subscriptionForm">
+                    <input type="email" id="emailInput" placeholder="Email" required>
+                    <button type="submit">➜</button>
+                </form>
+            </div>
+
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-section logo-section">
+                        <img src="path_to_your_logo.png" alt="Crown Logo">
+                        <p>No. 1 Authentic Crown Motorcycle Parts Online</p>
+                        <p>Authentic Motorcycle Parts in Pakistan Available Online with Doorstep Delivery Options.</p>
+                        <div class="social-media">
+                            <a href="your_facebook_link"><img src="facebook_icon.png" alt="Facebook"></a>
+                            <a href="your_instagram_link"><img src="instagram_icon.png" alt="Instagram"></a>
+                            <a href="your_youtube_link"><img src="youtube_icon.png" alt="YouTube"></a>
+                            <a href="your_tiktok_link"><img src="tiktok_icon.png" alt="TikTok"></a>
+                        </div>
+                    </div>
+                    <div class="footer-section category-section">
+                        <h3>Essential Categories</h3>
+                        <ul>
+                            <li>Clutch Parts</li>
+                            <li>Spark Plugs</li>
+                            <li>Control Cables</li>
+                            <li>Wheels & Accessories</li>
+                            <li>Wiring</li>
+                            <li>Electrical Parts</li>
+                            <li>Body Parts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024, Crownshop Powered by Crown Group of Companies</p>
+                    <a href="link_to_refund_policy">Refund policy</a> |
+                    <a href="link_to_privacy_policy">Privacy policy</a> |
+                    <a href="link_to_terms_of_service">Terms of service</a>
+                </div>
+            </footer>
+
+            <!-- Bootstrap JS and dependencies -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <!-- FAQ section js -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

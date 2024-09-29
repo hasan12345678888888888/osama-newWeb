@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-banner">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <div id="textCarousel" class="carousel slide text-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>Genuine Crown Motorcycle Parts available in Pakistan.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Your order will arrive within 3-5 business days.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Free delivery nationwide on orders over PKR 2,500/-.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="icons order-1">
+                    <a href="#" onclick="openSearchModal()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <div class="icons order-1">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span> <!-- This will update dynamically -->
+                        </a>
+                    </div>
+                </div>
+
+                <div class="logo mx-auto order-2">
+                    <img src="pics/company_logo-removebg-preview.png" alt="Ali Lube Oil" class="d-block">
+                </div>
+                <div class="spacer order-3">
+                    <!-- This empty div ensures spacing on the right -->
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Allcategory.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">All products</a>
+                        <a class="dropdown-item" href="#">New Arrivals</a>
+                        <a class="dropdown-item" href="#">Air Filters & Intakes</a>
+                        <a class="dropdown-item" href="#">Bearings</a>
+                        <a class="dropdown-item" href="#">Body Parts</a>
+                        <a class="dropdown-item" href="#">Brakes</a>
+                        <a class="dropdown-item" href="#">Battery</a>
+                        <a class="dropdown-item" href="#">Carburetors</a>
+                        <a class="dropdown-item" href="#">Control Cables</a>
+                        <a class="dropdown-item" href="#">Engine Parts</a>
+                        <a class="dropdown-item" href="#">Electrical Parts</a>
+                        <a class="dropdown-item" href="#">Jumps & Shocks</a>
+                        <a class="dropdown-item" href="#">Lubricants</a>
+                        <a class="dropdown-item" href="#">Meters</a>
+                        <a class="dropdown-item" href="#">Wheels & Accessories</a>
+                        <a class="dropdown-item" href="#">Wiring</a>
+
+                        <!-- Add more categories as needed -->
+                    </div>
+                </li>
+                <li><a href="puncture.html">Puncture Free Solution Cars</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="underRs.500.html">Under Rs. 500</a></li>
+                <li><a href="underRs.1000.html">Under Rs. 1,000</a></li>
+                <li><a href="underRs.2000.html">Under Rs. 2,000</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeSearchModal()">&times;</span>
+            <input type="text" id="searchInput" placeholder="Search for parts..." autofocus>
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </div>
+
+    <!-- Other sections of your website go here -->
+
+    <!-- JavaScript for the Modal -->
+    <script>
+        function openSearchModal() {
+            document.getElementById('searchModal').style.display = "block";
+        }
+
+        function closeSearchModal() {
+            document.getElementById('searchModal').style.display = "none";
+        }
+
+        function performSearch() {
+            var searchTerm = document.getElementById('searchInput').value;
+            alert('Search for: ' + searchTerm);
+            // Here you will typically handle the search term with your backend.
+            closeSearchModal();
+        }
+    </script>
+    <!-- New Section -->
+    <section class="intro-text text-center my-5">
+        <div class="container">
+            <h1>Authorized Online Store for Ali Can Lube Authentic Parts in Pakistan</h1>
+            <p class="lead">Explore premium body, engine, wheel parts, and lubricants with the largest online selection
+                for your 70cc, 100cc, 125cc, and 150cc motorcycles.</p>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row">
+                <!-- Existing Product Cards -->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/chain kits.jpg" alt="Chain Kits" class="img-fluid">
+                        <h3 class="product-title mt-3">Chain Kits</h3>
+                        <p class="product-price">PKR 2,500</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/bodyparts  kits.jpg" alt="Body Parts" class="img-fluid">
+                        <h3 class="product-title mt-3">Body Parts</h3>
+                        <p class="product-price">PKR 3,000</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/brakes parts.jpg" alt="Brake Parts" class="img-fluid">
+                        <h3 class="product-title mt-3">Brake Parts</h3>
+                        <p class="product-price">PKR 1,800</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/engine parts.jpg" alt="Engine Parts" class="img-fluid">
+                        <h3 class="product-title mt-3">Engine Parts</h3>
+                        <p class="product-price">PKR 5,000</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <!-- New Additional 4 Product Cards -->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/carburetors.jpg" alt="Product 5" class="img-fluid">
+                        <h3 class="product-title mt-3">Carburetors</h3>
+                        <p class="product-price">PKR 4,000</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/clutch parts.webp" alt="Product 6" class="img-fluid">
+                        <h3 class="product-title mt-3">Clutch Parts</h3>
+                        <p class="product-price">PKR 6,000</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/electrical parts.webp" alt="Product 7" class="img-fluid">
+                        <h3 class="product-title mt-3">Electrical Parts</h3>
+                        <p class="product-price">PKR 3,500</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/cables.jpeg" alt="Product 8" class="img-fluid">
+                        <h3 class="product-title mt-3">Cables</h3>
+                        <p class="product-price">PKR 4,500</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/wiring.jpeg" alt="Helmet" class="img-fluid">
+                        <h3 class="product-title mt-3">Wiring Items</h3>
+                        <p class="product-price">PKR 2,000</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/wheels and accessories.webp" alt="Spark Plugs" class="img-fluid">
+                        <h3 class="product-title mt-3">Wheels Accessories</h3>
+                        <p class="product-price">PKR 1,500</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/Air filters and intakes.jpg" alt="Oil Filter" class="img-fluid">
+                        <h3 class="product-title mt-3">Air Filter</h3>
+                        <p class="product-price">PKR 800</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/Shocks.jpeg" alt="Bike Lights" class="img-fluid">
+                        <h3 class="product-title mt-3">Shock Absorber</h3>
+                        <p class="product-price">PKR 3,200</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/spark plugs.jpeg" alt="Spark Plugs" class="img-fluid">
+                        <h3 class="product-title mt-3">Spark Plugs</h3>
+                        <p class="product-price">PKR 1,500</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/lubricant.jpeg" alt="Oil Filter" class="img-fluid">
+                        <h3 class="product-title mt-3">Lubricants</h3>
+                        <p class="product-price">PKR 800</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/motorcycle bearing.webp" alt="Bike Lights" class="img-fluid">
+                        <h3 class="product-title mt-3">Motorcycle Bearing</h3>
+                        <p class="product-price">PKR 3,200</p>
+                        <a href="#" class="btn btn-outline-primary">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- button -->
+    <div class="text-center my-4">
+        <a href="#" class="view-all-btn">View all</a>
+    </div>
+
+    <!-- video -->
+    <section class="video-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Watch Our Latest Video</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="video-wrapper">
+                        <video controls width="800" height="450">
+                            <source src="pics/video1.mp4" type="video/mp4">
+                            <!-- Your browser does not support the video tag. -->
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- discount -->
+    <section class="discount-offer text-center my-5">
+        <div class="container">
+            <h1 class="discount-heading">DISCOUNT OFFER!</h1>
+            <p class="discount-subheading">Buy Crown Puncture Free Solution Bundle for your Car and Save <strong>PKR
+                    210</strong> on 4 Bottles!</p>
+
+            <div class="discount-buttons">
+                <a href="#" class="btn primary-btn">Protect Your Car Tyre for Just PKR 799</a>
+                <a href="#" class="btn secondary-btn">Discover More</a>
+            </div>
+        </div>
+    </section>
+    <!-- poster1 -->
+    <section class="product-poster text-center py-5">
+        <div class="container">
+            <div class="poster-banner">
+                <img src="pics/poster1.webp" alt="Crown Products" class="img-fluid">
+            </div>
+            <a href="#" class="btn shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+    <!-- increment/decrement -->
+    <!-- Motorcycle Body Parts Section -->
+    <section class="motorcycle-body-parts py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Motorcycle Body Parts</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/product1.jpeg" alt="Crown Brake Shoe Set" class="img-fluid">
+                        <h3 class="product-title mt-3">Crown Brake Shoe Set Extra Grip</h3>
+                        <p class="product-price">Rs. 280</p>
+                        <div class="quantity-controls">
+                            <button class="btn btn-outline-primary btn-decrement"
+                                onclick="updateCart(this, -1)">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-outline-primary btn-increment"
+                                onclick="updateCart(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/product2.webp" alt="Crown Head Light" class="img-fluid">
+                        <h3 class="product-title mt-3">Crown Head Light with Fit Bulb</h3>
+                        <p class="product-price">Rs. 540</p>
+                        <div class="quantity-controls">
+                            <button class="btn btn-outline-primary btn-decrement"
+                                onclick="updateCart(this, -1)">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-outline-primary btn-increment"
+                                onclick="updateCart(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/product3.jpeg" alt="Crown Brake Shoe Set" class="img-fluid">
+                        <h3 class="product-title mt-3">Crown Brake Shoe Set</h3>
+                        <p class="product-price">Rs. 270</p>
+                        <div class="quantity-controls">
+                            <button class="btn btn-outline-primary btn-decrement"
+                                onclick="updateCart(this, -1)">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-outline-primary btn-increment"
+                                onclick="updateCart(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="pics/product4.jpg" alt="Crown Brake Switch" class="img-fluid">
+                        <h3 class="product-title mt-3">Crown Brake Switch Rear W/Spring</h3>
+                        <p class="product-price">Rs. 60</p>
+                        <div class="quantity-controls">
+                            <button class="btn btn-outline-primary btn-decrement"
+                                onclick="updateCart(this, -1)">-</button>
+                            <span class="quantity">0</span>
+                            <button class="btn btn-outline-primary btn-increment"
+                                onclick="updateCart(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center my-4">
+            <a href="#" class="view-all-btn">View all</a>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <script>
+        let totalCartCount = 0;
+
+        function updateCart(button, change) {
+            // Find the nearest product card that the button belongs to
+            const productCard = button.closest('.product-card');
+
+            // Find the quantity span within that product card
+            const quantitySpan = productCard.querySelector('.quantity');
+
+            // Get the current quantity and update it based on the change
+            let currentQuantity = parseInt(quantitySpan.textContent);
+            currentQuantity += change;
+
+            // Ensure the quantity doesn't go below 0
+            if (currentQuantity < 0) {
+                currentQuantity = 0;
+            }
+
+            // Update the quantity on the page
+            quantitySpan.textContent = currentQuantity;
+
+            // Calculate total cart count
+            updateCartIcon(change);
+        }
+
+        function updateCartIcon(change) {
+            const cartIcon = document.querySelector('.cart-count');
+
+            // Update total cart count
+            totalCartCount += change;
+
+            // Ensure the total cart count doesn't go below 0
+            if (totalCartCount < 0) {
+                totalCartCount = 0;
+            }
+
+            // Update the cart icon with the current total count
+            if (totalCartCount > 0) {
+                cartIcon.textContent = totalCartCount;
+                cartIcon.style.display = 'inline-block';
+            } else {
+                cartIcon.textContent = '';
+                cartIcon.style.display = 'none';
+            }
+        }
+    </script>
+
+<div class="email-subscription">
+    <p class="title">Subscribe to our emails</p>
+    <p class="description">Be the first to know about new collections and exclusive offers.</p>
+    <form id="subscriptionForm">
+      <input type="email" id="emailInput" placeholder="Email" required>
+      <button type="submit">➜</button>
+    </form>
+  </div>
+
+  
+<footer class="site-footer"></footer>
+<div class="footer-content">
+    <div class="footer-section logo-section">
+        <img src="path_to_your_logo.png" alt="Crown Logo">
+        <p>No. 1 Authentic Crown Motorcycle Parts Online</p>
+        <p>Authentic Motorcycle Parts in Pakistan Available Online with Doorstep Delivery Options.</p>
+        <div class="social-media">
+            <a href="your_facebook_link"><img src="facebook_icon.png" alt="Facebook"></a>
+            <a href="your_instagram_link"><img src="instagram_icon.png" alt="Instagram"></a>
+            <a href="your_youtube_link"><img src="youtube_icon.png" alt="YouTube"></a>
+            <a href="your_tiktok_link"><img src="tiktok_icon.png" alt="TikTok"></a>
+        </div>
+    </div>
+    <div class="footer-section category-section">
+        <h3>Essential Categories</h3>
+        <ul>
+            <li>Clutch Parts</li>
+            <li>Spark Plugs</li>
+            <li>Control Cables</li>
+            <li>Wheels & Accessories</li>
+            <li>Wiring</li>
+            <li>Electrical Parts</li>
+            <li>Body Parts</li>
+        </ul>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>© 2024, Crownshop Powered by Crown Group of Companies</p>
+    <a href="link_to_refund_policy">Refund policy</a> | 
+    <a href="link_to_privacy_policy">Privacy policy</a> | 
+    <a href="link_to_terms_of_service">Terms of service</a>
+</div>
+
+
+<!-- Chatbox Button and Modal -->
+<div id="chatContainer">
+    <div id="chatButton" onclick="openChat()">
+        <span class="chat-icon">💬</span> Chat
+    </div>
+
+    <div id="chatBox">
+        <div class="chatHeader">
+            <span>Crowneshop</span>
+            <button id="closeChat" onclick="closeChat()">X</button>
+        </div>
+        <div class="chatContent">
+            <div id="initialChat" class="chatSection">
+                <p>👋 Hi, message us with any questions. We're happy to help!</p>
+                <button class="optionButton" onclick="showTrackOrder()">Track my order</button>
+                <button class="optionButton" onclick="showReturnPolicy()">What is your return policy?</button>
+            </div>
+
+            <div id="trackOrder" class="chatSection hidden">
+                <p>To see your order status, please provide your order details.</p>
+                <input type="text" placeholder="Enter order information">
+                <button class="optionButton">Submit</button>
+            </div>
+
+            <div id="returnPolicy" class="chatSection hidden">
+                <p>Our return policy allows for returns within 30 days of purchase. Please ensure that the product is in its original packaging.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Open the chat box
+    function openChat() {
+        document.getElementById('chatBox').classList.add('show');
+        document.getElementById('initialChat').classList.add('show');
+    }
+
+    // Close the chat box
+    function closeChat() {
+        document.getElementById('chatBox').classList.remove('show');
+        document.querySelectorAll('.chatSection').forEach(section => section.classList.remove('show'));
+    }
+
+    // Show the "Track my order" section
+    function showTrackOrder() {
+        document.getElementById('initialChat').classList.remove('show');
+        document.getElementById('trackOrder').classList.add('show');
+    }
+
+    // Show the "Return Policy" section
+    function showReturnPolicy() {
+        document.getElementById('initialChat').classList.remove('show');
+        document.getElementById('returnPolicy').classList.add('show');
+    }
+</script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
